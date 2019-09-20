@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+	<head lang="en">
+		<meta charset="utf-8"/>
+		<script type="text/javascript" src="jkuang-lab1.js"></script>
+		<style>
+			h1 {padding: 20px; text-align: center;}
+			h3 {padding: 20px; text-align: center;}
+			div {text-align: center; margin: 100px;}
+			table {margin-left: 420px;}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Rock, Paper, Scissors, Lizard, Spock</h1>
+		<h3>Play Game</h3>
+		<div id="DIV_START">
+			Num Rounds: <input id="ROUNDS_TO_PLAY" type='number'></br>
+			<button onclick='startGame(this)'>Start</button></br>
+		</div>
+		Overall Winner: <span id="OVERALL">&nbsp</span>
+		<div id="DIV_PLAY" hidden>
+			Rounds Remaining: <span id="ROUNDS_REMAINING">0</span></br>
+			<table>
+				<tbody>
+					<tr>
+						<td><button id="ROCK" onclick="userSelect(this)">Rock</button></td>
+						<td><button id="PAPER" onclick="userSelect(this)">Paper</button></td>
+						<td><button id="SCISSORS" onclick="userSelect(this)">Scissors</button></td>
+						<td><button id="LIZARD" onclick="userSelect(this)">Lizard</button></td>
+						<td><button id="SPOCK" onclick="userSelect(this)">Spock</button></td>
+					</tr>
+				</tbody>
+			</table>
+			
+			Human Chose:<span id="HUMAN_CHOSE">&nbsp;</span></br>
+			Computer Chose:<span id="COMPUTER_CHOSE">&nbsp</span></br>
+			Winner:<span id="RESULT">&nbsp</span></br>
+			Human Wins:<span id="HUMAN_WINS">&nbsp</span></br>
+			Computer Wins:<span id="COMPUTER_WINS">&nbsp</span>
+			
+			
+		</div>
+		
+	</body>
+</html>
